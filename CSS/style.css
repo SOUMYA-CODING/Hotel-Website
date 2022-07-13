@@ -6,3 +6,135 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+a{
+    text-decoration: none;
+}
+
+/* Header / Navbar */
+#header-section{
+    width: 100%;
+    height: auto;
+}
+
+#header-section .navbar{
+    background: transparent;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    background-color: #fff;
+}
+
+.navbar-brand img {
+    width: 90px;
+}
+
+#header-section .navbar-toggler {
+    border: none;
+}
+
+#header-section .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#header-section .nav-item {
+    margin: 0px 10px;
+}
+
+#header-section .navbar-nav .nav-link{
+    position: relative;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+#header-section .navbar-nav .nav-link:hover{
+    color: orangered;
+ }
+
+#header-section .navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-section .booking-btn a{
+    border: 2px solid royalblue;
+    border-radius: 5px;
+    color: royalblue;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#header-section .booking-btn a:hover{
+    box-shadow: 0px 0px 8px 0px royalblue;
+}
+
+.navbar .header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 2px 4px #111111;
+    -webkit-box-shadow: 0px 2px 4px #111111;
+}
+
+/* Home Page */
+#home-page{
+    margin-top: 7rem;
+    width: 100%;
+    height: 100%;
+    min-height: 550px;
+}
+
+.home-page-banner{
+    width: 100%;
+    height: 550px;
+    padding: 10rem 2rem;
+    background-image: url('../Assets/img\ \(9\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.home-page-banner h1{
+    font-size: 3.5rem;
+    color: #000;
+    font-weight: 900;
+}
+
+.home-page-banner p{
+    width: 50%;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.search-query-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+.search-query-area form{
+    width: auto;
+    border-radius: 10px;
+    padding: 1.5rem 3rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px #000;
+}
+
+.search-query-area .btn{
+    background-color: royalblue;
+}
+
+.search-query-area .btn:hover{
+    box-shadow: 0px 0px 8px 0px royalblue;
+}
+
+/* About Page */
+#about-page{
+    width: 100%;
+    height: 100vh;
+}
