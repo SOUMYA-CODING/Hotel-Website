@@ -11,6 +11,18 @@ a {
     text-decoration: none;
 }
 
+/* Common */
+#header-text {
+    font-size: 35px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+
+#header-title{
+    font-size: 18px;
+    color: orangered;
+}
+
 /* Home Page */
 .header-section .navbar {
     width: 100%;
@@ -67,27 +79,27 @@ a {
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 5rem;
 }
 
-#home-page .banner-content h1{
+#home-page .banner-content h1 {
     color: #000;
     font-size: 55px;
     font-weight: 900;
 }
 
-#home-page .banner-content p{
+#home-page .banner-content p {
     color: #fff;
     width: 60%;
 }
 
 #home-page .booking-query-section {
     position: relative;
-    margin-top: -3rem;
+    margin-top: -4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,30 +115,35 @@ a {
 #home-page .booking-query-section .btn {
     background-color: orangered;
     color: #fff;
+    height: 100%;
 }
 
 #home-page .booking-query-section .btn:hover {
     box-shadow: 0px 0px 8px 0px orangered;
 }
 
+.booking-query-section .form-control:hover {
+    box-shadow: 0px 0px 8px 0px royalblue;
+}
+
+.booking-query-section .form-control:focus {
+    box-shadow: 0px 0px 8px 0px royalblue;
+}
+
 /* About Page */
-#about-page{
+#about-page {
     width: 100%;
     height: 100%;
     padding: 7rem 5rem;
 }
 
-#about-page .row{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+#about-page .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#about-page h5{
-    color: orangered;
-}
-
-.img-banner{
+.img-banner {
     width: 520px;
     height: 350px;
     background-image: url('../Assets/banner-1.png');
@@ -135,8 +152,62 @@ a {
     background-size: cover;
 }
 
+#about-page .btn {
+    color: #fff;
+    background-color: orangered;
+}
+
+#about-page .btn:hover {
+    box-shadow: 0px 0px 8px 0px orangered;
+}
+
 
 /* Room Page */
+#room-page {
+    width: 100%;
+    height: 100%;
+    padding: 7rem 0rem;
+}
+
+#room-page .card {
+    width: 400px;
+    border: none;
+    transition: 0.5s;
+}
+
+.description {
+    position: relative;
+}
+
+#room-page .card .btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: orangered;
+    margin: 1rem;
+}
+
+#room-page .card .btn:hover {
+    box-shadow: 0px 0px 8px 0px orangered;
+}
+
+#room-page .card .description {
+    display: none;
+}
+
+#room-page .card:hover .description {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+}
 
 
 /* Service Page */
+#service-page {
+    width: 100%;
+    height: 100%;
+    min-height: 600;
+    padding: 7rem 0rem;
+    margin-bottom: 5rem;
+}

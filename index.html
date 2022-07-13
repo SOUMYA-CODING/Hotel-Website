@@ -56,7 +56,10 @@
                                 <a class="nav-link" href="#service-page">Service</a>
                             </li>
                             <li class="nav-item">
-                                <button class="btn">Contact</button>
+                                <a class="nav-link" href="#testimonial-page">testimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn" href="Authentication/login.html">Sign in</a>
                             </li>
                         </ul>
                     </div>
@@ -74,16 +77,28 @@
                 <form autocomplete="off">
                     <div class="row">
                         <div class="col">
-                            <input type="date" class="form-control" placeholder="Date">
+                            <div class="form-floating">
+                                <input type="date" class="form-control" id="check-in" placeholder="Check-in" required>
+                                <label for="check-in">Check-in</label>
+                            </div>
                         </div>
                         <div class="col">
-                            <input type="time" class="form-control" placeholder="Time">
+                            <div class="form-floating">
+                                <input type="date" class="form-control" id="check-out" placeholder="check-out" required>
+                                <label for="check-in">check-out</label>
+                            </div>
                         </div>
                         <div class="col">
-                            <input type="number" class="form-control" placeholder="Adult">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="Adult" placeholder="Adult" required>
+                                <label for="check-in">Adult</label>
+                            </div>
                         </div>
                         <div class="col">
-                            <input type="number" class="form-control" placeholder="Children">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="Children" placeholder="Children" required>
+                                <label for="check-in">Children</label>
+                            </div>
                         </div>
                         <div class="col">
                             <button class="btn">Check Availability</button>
@@ -98,12 +113,13 @@
     <div id="about-page" class="container">
         <div class="row d-flex justify-content-between">
             <div class="col">
-                <h5>Welcome to HBsite</h5>
-                <h2 class="mb-3">Relaxing Pleasure</h2>
+                <h5 id="header-title">Welcome to HBsite</h5>
+                <h2 class="mb-3" id="header-text">Relaxing Pleasure</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed quasi aliquam tenetur! Debitis
                     repudiandae eaque unde nam sequi cupiditate eum eos doloribus dolorem! Laborum assumenda commodi
                     culpa facilis modi dolorem quae omnis, ea adipisci, harum necessitatibus asperiores corrupti. Sunt
                     excepturi similique accusamus sapiente ea!</p>
+                <a href="" class="btn">Explore More!</a>
             </div>
             <div class="col">
                 <div class="row d-flex justify-content-evenly">
@@ -116,12 +132,118 @@
     </div>
 
     <!-- Room Page -->
-    <div id="room-page">
-        
+    <div id="room-page" class="container">
+        <div class="row">
+            <div class="col-sm-12 section-title text-center mb-5">
+                <h5 id="header-title">Recommend for you</h5>
+                <h2 id="header-text">Our Favourite Rooms</h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col">
+                <div class="card" id="card1">
+                    <img src="Assets/img (4).jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay text-light description">
+                        <h5 class="card-title mb-3">Single Bedroom</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nemo?
+                        </p>
+                        <p class="card-text">Rs 1500 <strike class="text-danger">Rs 1750</strike></p>
+                        <a href="" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Assets/img (5).jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay text-light description">
+                        <h5 class="card-title mb-3">Luxury Bedroom</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nemo?
+                        </p>
+                        <p class="card-text">Rs 1500 <strike class="text-danger">Rs 1750</strike></p>
+                        <a href="" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Assets/img (7).jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay text-light description">
+                        <h5 class="card-title mb-3">Traditional Bedroom</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nemo?
+                        </p>
+                        <p class="card-text">Rs 1500 <strike class="text-danger">Rs 1750</strike></p>
+                        <a href="" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Service Page -->
-    <div id="service-page">
+    <div id="service-page" class="container">
+        <div class="row">
+            <div class="col-sm-12 section-title text-center mb-5">
+                <h5 id="header-title">We are here for you</h5 id="">
+                <h2 id="header-text">Our Services</h2>
+            </div>
+        </div>
+        <div class="row align-center service-item">
+            <div class="col">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="restaurant" role="tabpanel">
+                        <img src="Assets/s-1.png" alt="">
+                    </div>
+                    <div class="tab-pane fade" id="campfire" role="tabpanel">
+                        <img src="Assets/s-3.png" alt="">
+                    </div>
+                    <div class="tab-pane fade" id="swimming" role="tabpanel">
+                        <img src="Assets/s-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col position-relative">
+                <div class="service-menu-area">
+                    <ul class="nav">
+                        <li class="nav-item" role="presentation">
+                            <a href="#restaurant" data-bs-toggle="tab" class="active">
+                                <span class="service-icon">
+
+                                </span>
+                                <h5>Restaurant</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, at?</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#campfire" data-bs-toggle="tab" class="active">
+                                <span class="service-icon">
+
+                                </span>
+                                <h5>Campfire</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, at?</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#swimming" data-bs-toggle="tab" class="active">
+                                <span class="service-icon">
+
+                                </span>
+                                <h5>Swimming</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, at?</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Page -->
+    <div id="testimonial-page">
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="container-fluid">
 
     </div>
 
