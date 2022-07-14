@@ -410,3 +410,11 @@ html {
     padding: .7rem 1.1rem;
     border: none;
 }
+
+/* Login Page */
+#login-page .row{
+    width: 100%;
+    margin: 1rem 0;
+    height: 500px;
+    background: red;
+}
