@@ -232,8 +232,7 @@ html {
 
 #service-page .servcie-banner-card {
     border: none;
-    background-color: #111;
-    color: #fff;
+    border-radius: 0;
     box-shadow: 0px 2px 8px #111;
 }
 
