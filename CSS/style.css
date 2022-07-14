@@ -27,6 +27,32 @@ html {
     scroll-behavior: smooth;
 }
 
+#or {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#or::before,
+#or::after {
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    top: 24px;
+    background-color: #aaa;
+    content: '';
+}
+
+#or::before {
+    left: 0;
+}
+
+#or::after {
+    right: 0;
+}
+
 /* Home Page */
 .header-section .navbar {
     width: 100%;
@@ -412,7 +438,7 @@ html {
 }
 
 /* Login Page */
-#login-page{
+#login-page {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -420,34 +446,35 @@ html {
     align-items: center;
 }
 
-#login-page .row{
+#login-page .row {
     width: 100%;
     margin: 1rem 0;
     height: 600px;
     box-shadow: 0px 0px 8px 0px #111;
 }
 
-#login-page .row .login-banner{
+#login-page .row .login-banner {
+    height: 600px;
     background-image: url('../Assets/img\ \(2\).jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.login-section{
-    padding: 7.5rem 5rem;
+.login-section {
+    padding: 5.5rem 5rem;
 }
 
-.login-section p a{
+.login-section p a {
     text-decoration: none;
     color: orange;
 }
 
-.login-icon img{
+.login-icon img {
     width: 24px;
 }
 
-.login-icon span{
+.login-icon span {
     border: 1px solid #111;
     border-radius: 5px;
     padding: 1rem;
@@ -457,39 +484,39 @@ html {
     width: 100%;
 }
 
-.login-icon span:hover{
+.login-icon span:hover {
     box-shadow: 0px 0px 8px 0px #111;
 }
 
-.form-check-label span{
+.form-check-label span {
     color: orange;
 }
 
-.login-section .form-control:focus{
+.login-section .form-control:focus {
     box-shadow: 0px 0px 8px 0px royalblue;
 }
 
-.login-section .form-control:hover{
+.login-section .form-control:hover {
     box-shadow: 0px 0px 8px 0px royalblue;
 }
 
-.btn-submit .btn{
+.btn-submit .btn {
     width: 100%;
     background-color: orangered;
     color: #fff;
 }
 
-.btn-submit .btn:focus{
+.btn-submit .btn:focus {
     box-shadow: none;
 }
 
-.btn-submit .btn:hover{
+.btn-submit .btn:hover {
     box-shadow: 0px 0px 8px 0px orangered;
     color: #fff;
 }
 
 /* Registration Page */
-#registration-page{
+#registration-page {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -497,34 +524,35 @@ html {
     align-items: center;
 }
 
-#registration-page .row{
+#registration-page .row {
     width: 100%;
     margin: 1rem 0;
     height: 600px;
     box-shadow: 0px 0px 8px 0px #111;
 }
 
-#registration-page .row .registration-banner{
+#registration-page .row .registration-banner {
+    height: 600px;
     background-image: url('../Assets/img\ \(3\).jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.registration-section{
-    padding: 6rem 5rem;
+.registration-section {
+    padding: 4rem 5rem;
 }
 
-.registration-section p a{
+.registration-section p a {
     text-decoration: none;
     color: orange;
 }
 
-.registration-icon img{
+.registration-icon img {
     width: 24px;
 }
 
-.registration-icon span{
+.registration-icon span {
     border: 1px solid #111;
     border-radius: 5px;
     padding: 1rem;
@@ -534,14 +562,14 @@ html {
     width: 100%;
 }
 
-.registration-icon span:hover{
+.registration-icon span:hover {
     box-shadow: 0px 0px 8px 0px #111;
 }
 
-.registration-section .form-control:focus{
+.registration-section .form-control:focus {
     box-shadow: 0px 0px 8px 0px royalblue;
 }
 
-.registration-section .form-control:hover{
+.registration-section .form-control:hover {
     box-shadow: 0px 0px 8px 0px royalblue;
 }
