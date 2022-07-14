@@ -371,7 +371,7 @@ html {
 
 .footer-heading ul li {
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     float: left;
     width: 50%;
     margin-bottom: .7rem;
