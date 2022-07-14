@@ -18,9 +18,13 @@ a {
     letter-spacing: 1.5px;
 }
 
-#header-title{
+#header-title {
     font-size: 18px;
     color: orangered;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Home Page */
@@ -210,13 +214,13 @@ a {
     padding: 7rem 0rem;
 }
 
-#service-page .service-item{
+#service-page .service-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#service-page .servcie-banner{
+#service-page .servcie-banner {
     width: 600px;
     height: 450px;
     background-image: url('../Assets/img\ \(11\).jpg');
@@ -226,19 +230,19 @@ a {
     border-radius: 10px;
 }
 
-#service-page .servcie-banner-card{
+#service-page .servcie-banner-card {
     border: none;
     background-color: #111;
     color: #fff;
-    box-shadow: 0px 2px 8px  #111;
+    box-shadow: 0px 2px 8px #111;
 }
 
-#service-page .servcie-banner-card:hover{
+#service-page .servcie-banner-card:hover {
     box-shadow: 0px 2px 70px #111;
     transform: translateY(-5px);
 }
 
-#service-page .servcie-banner-card .img{
+#service-page .servcie-banner-card .img {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -249,13 +253,13 @@ a {
     margin-bottom: 1rem;
 }
 
-#service-page .servcie-banner-card h5{
+#service-page .servcie-banner-card h5 {
     color: orangered;
     font-size: 24px;
     letter-spacing: 2px;
 }
 
-#service-page .servcie-banner-card p{
+#service-page .servcie-banner-card p {
     font-style: 14px;
     letter-spacing: 1.5px;
 }
@@ -265,4 +269,14 @@ a {
     width: 100%;
     height: 100%;
     padding: 7rem 0rem;
+}
+
+#testimonial-page .rounded-circle {
+    width: 150px;
+    height: 150px;
+}
+
+#testimonial-page .carousel-control-prev-icon,
+#testimonial-page .carousel-control-next-icon {
+    background-color: red;
 }
