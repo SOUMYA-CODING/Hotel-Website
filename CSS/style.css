@@ -207,7 +207,62 @@ a {
 #service-page {
     width: 100%;
     height: 100%;
-    min-height: 600;
     padding: 7rem 0rem;
-    margin-bottom: 5rem;
+}
+
+#service-page .service-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#service-page .servcie-banner{
+    width: 600px;
+    height: 450px;
+    background-image: url('../Assets/img\ \(11\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#service-page .servcie-banner-card{
+    border: none;
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0px 2px 8px  #111;
+}
+
+#service-page .servcie-banner-card:hover{
+    box-shadow: 0px 2px 70px #111;
+    transform: translateY(-5px);
+}
+
+#service-page .servcie-banner-card .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#service-page .servcie-banner-card h5{
+    color: orangered;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+#service-page .servcie-banner-card p{
+    font-style: 14px;
+    letter-spacing: 1.5px;
+}
+
+/* Service Page */
+#testimonial-page {
+    width: 100%;
+    height: 100%;
+    padding: 7rem 0rem;
 }
