@@ -10,7 +10,16 @@ function loginvalidationFun(){
         document.getElementById("login_email_error").innerHTML = "Field can't be empty";
         return false;
     }else if(!email.match(mailFormat)){
-        document.getElementById("login_email_error").innerHTML = "Please enter correct email address"
+        document.getElementById("login_email_error").innerHTML = "Please enter correct email address";
+        return false;
+    }else{
+        return true;
+    }
+
+    //Validation for password
+    if(password === ""){
+        document.getElementById("password_email_error").innerHTML = "Field can't be empty";
         return false;
     }
+
 }
