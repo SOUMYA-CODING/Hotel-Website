@@ -35,8 +35,7 @@
             </div>
             <div class="col form">
                 <div class="login-section">
-                    <form action="../index.html" autocomplete="off" onsubmit="return loginvalidationFun()"
-                        method="post">
+                    <form autocomplete="off" onsubmit="return loginvalidationFun()">
                         <h3>Welcome Back!</h3>
                         <p>Don't have a account? <a href="../Authentication/registration.html">Register</a></p>
                         <div class="d-flex mt-3 mb-3 login-icon">
@@ -59,7 +58,7 @@
                         </div>
 
                         <div class="btn-submit">
-                            <button class="btn" type="submit">Login</button>
+                            <button class="btn">Login</button>
                         </div>
                     </form>
                 </div>
@@ -78,16 +77,6 @@
 
     <!-- Authentication JS -->
     <script src="../Script/authentication.js"></script>
-
-    <!-- AOS Animations -->
-    <script src="sweetalert2.min.js"></script>
-    <script>
-        //For Aos animation
-        AOS.init({
-            offset: 300,
-            duration: 1000,
-        });
-    </script>
 </body>
 
 </html>

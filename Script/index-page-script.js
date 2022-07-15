@@ -16,3 +16,13 @@ navBar.forEach(function (a) {
         navCollapse.classList.remove("show");
     })
 });
+
+
+function queryBooking(){
+    const check_in = document.getElementById("check_in").value;
+    const check_out = document.getElementById("check_out").value;
+    const adult = document.getElementById("adult").value;
+    const children = document.getElementById("children").value;
+
+    alert(check_in + " " + check_out + " " + adult + " " + children);
+}
