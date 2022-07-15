@@ -35,8 +35,8 @@
             </div>
             <div class="col form">
                 <div class="login-section">
-                    <form action="" autocomplete="off">
-                        <h3>Welcome Back!.</h3>
+                    <form action="#" autocomplete="off" onsubmit="return loginvalidationFun()">
+                        <h3>Welcome Back!</h3>
                         <p>Don't have a account? <a href="../Authentication/registration.html">Register</a></p>
                         <div class="d-flex mt-3 mb-3 login-icon">
                             <span><img src="https://img.icons8.com/color/48/000000/google-logo.png" /> Sign In with
@@ -48,17 +48,17 @@
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="email">
-                            <span id="login_email_error"></span>
+                            <span id="login_email_error" class="error_message"></span>
                         </div>
 
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="email" class="form-control" id="password">
-                            <span id="password_email_error"></span>
+                            <input type="password" class="form-control" id="password">
+                            <span id="password_email_error" class="error_message"></span>
                         </div>
 
                         <div class="btn-submit">
-                            <button class="btn">Login</button>
+                            <button class="btn" type="submit">Login</button>
                         </div>
                     </form>
                 </div>

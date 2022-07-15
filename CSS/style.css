@@ -487,6 +487,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .login-icon span:hover {
@@ -570,6 +571,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .registration-icon span:hover {
@@ -582,4 +584,11 @@ html {
 
 .registration-section .form-control:hover {
     box-shadow: 0px 0px 8px 0px royalblue;
+}
+
+
+/* Error Message */
+.error_message {
+    font-size: 12px;
+    color: red;
 }
