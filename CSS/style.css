@@ -461,8 +461,10 @@ html {
     background-size: cover;
 }
 
-.login-section {
-    padding: 5.5rem 5rem;
+#login-page .row .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-section p a {
@@ -481,7 +483,10 @@ html {
     justify-content: center;
     margin: 2px;
     font-size: 14px;
-    width: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-icon span:hover {
@@ -539,8 +544,10 @@ html {
     background-size: cover;
 }
 
-.registration-section {
-    padding: 4rem 5rem;
+#registration-page .row .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .registration-section p a {
@@ -559,7 +566,10 @@ html {
     justify-content: center;
     margin: 2px;
     font-size: 14px;
-    width: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .registration-icon span:hover {
