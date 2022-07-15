@@ -1,5 +1,6 @@
 //For login page validation
-function loginvalidationFun(){
+function loginvalidationFun() {
+
     //Get the data
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
@@ -19,6 +20,18 @@ function loginvalidationFun(){
     //Validation for password
     if(password === ""){
         document.getElementById("password_email_error").innerHTML = "Field can't be empty";
+        return false;
+    }else if(password <= 8){
+        document.getElementById("password_email_error").innerHTML = "Password is too small should be altleast 8 digit";
+        return false;
+    }else if(password.match(/[a-z]/g)){
+        document.getElementById("password_email_error").innerHTML = "Password must contain a lowercase letter";
+        return false;
+    }else if(password.match(/[A-Z]/g)){
+        document.getElementById("password_email_error").innerHTML = "Password must contain a uppercase letter";
+        return false;
+    }else if(password.match(/[0-9]/g)){
+        document.getElementById("password_email_error").innerHTML = "Password must contain a number";
         return false;
     }
 
