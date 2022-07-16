@@ -30,8 +30,8 @@ html {
 #or {
     position: relative;
     width: 100%;
-    height: 50px;
-    line-height: 50px;
+    height: 1.1rem;
+    line-height: 5px;
     text-align: center;
 }
 
@@ -40,7 +40,7 @@ html {
     position: absolute;
     width: 200px;
     height: 1px;
-    top: 24px;
+    top: 2px;
     background-color: #aaa;
     content: '';
 }
@@ -449,12 +449,12 @@ html {
 #login-page .row {
     width: 100%;
     margin: 1rem 0;
-    height: 600px;
+    height: 650px;
     box-shadow: 0px 0px 8px 0px #111;
 }
 
 #login-page .row .login-banner {
-    height: 600px;
+    height: 650px;
     background-image: url('../Assets/img\ \(2\).jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -462,6 +462,7 @@ html {
 }
 
 #login-page .row .form {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -533,12 +534,12 @@ html {
 #registration-page .row {
     width: 100%;
     margin: 1rem 0;
-    height: 600px;
+    height: 650px;
     box-shadow: 0px 0px 8px 0px #111;
 }
 
 #registration-page .row .registration-banner {
-    height: 600px;
+    height: 650px;
     background-image: url('../Assets/img\ \(3\).jpg');
     background-repeat: no-repeat;
     background-position: center;
