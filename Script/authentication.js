@@ -1,7 +1,5 @@
 //For login page validation
 function loginvalidationFun() {
-    let error = false;
-
     //Get the data
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
@@ -9,21 +7,11 @@ function loginvalidationFun() {
     //Call the functions
     emailValidation(email);
     passwordValidation(password);
-
-    if (error) {
-        return true;
-    }
-    else {
-        return false;
-    }
-
 }
 
 
 //For Registration page validation
 function registrationvalidationFun() {
-    let error = false;
-
     //Get the data
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
@@ -32,15 +20,7 @@ function registrationvalidationFun() {
     //Call the functions
     emailValidation(email);
     passwordValidation(password);
-    confirmpasswordValidation(confirm_password);
-
-    //Error
-    if (error) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    confirmpasswordValidation(password, confirm_password);
 }
 
 //Email
@@ -83,7 +63,7 @@ function passwordValidation(password) {
     }
 }
 
-function confirmpasswordValidation(confirm_password) {
+function confirmpasswordValidation(password, confirm_password) {
     //Validation for password
     if (confirm_password != password) {
         document.getElementById("confirm_password_error").innerHTML = "Field can't be empty";
