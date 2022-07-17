@@ -71,7 +71,7 @@
                     dolorum placeat consequatur exercitationem quibusdam laudantium.</p>
             </div>
             <div class="booking-query-section">
-                <form autocomplete="off">
+                <form autocomplete="off" onsubmit="queryBooking()" action="/Booking/view-rooms.html">
                     <div class="row">
                         <div class="col">
                             <div class="form-floating">
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <button class="btn" onclick="queryBooking()">Check Availability</button>
+                            <button class="btn">Check Availability</button>
                         </div>
                     </div>
                 </form>
@@ -469,7 +469,7 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     
-    <script src="Script/index-page-script.js"></script>
+    <script src="Script/index_page_script.js"></script>
 
     <!-- AOS Animations -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
