@@ -103,11 +103,9 @@
                             <label for="room_type" class="form-label">Room Type</label>
                             <select name="" id="room_type" class="form-select">
                                 <option value="">Select Room Type</option>
-                                <option value="">Single Bedroom(AC)</option>
-                                <option value="">Single Bedroom(NON-AC)</option>
-                                <option value="">Double Bedroom(AC)</option>
-                                <option value="">Double Bedroom(NON-AC)</option>
-                                <option value="">Luxury Bedroom(AC)</option>
+                                <option value="Single Bedroom">Single Bedroom</option>
+                                <option value="Luxary Bedroom">Luxary Bedroom</option>
+                                <option value="Traditional Bedroom">Traditional Bedroom</option>
                             </select>
                             <span id="room_type_error" class="error_message"></span>
                         </div>
@@ -115,6 +113,13 @@
                     <di class="col-3">
                         <div class="mb-3">
                             <label for="number_of_rooms" class="form-label">Number of Rooms</label>
+                            <input type="number" class="form-control" id="number_of_rooms">
+                            <span id="number_of_rooms_error" class="error_message"></span>
+                        </div>
+                    </di>
+                    <di class="col-3">
+                        <div class="mb-3">
+                            <label for="number_of_rooms" class="form-label">AC / NON-AC</label>
                             <input type="number" class="form-control" id="number_of_rooms">
                             <span id="number_of_rooms_error" class="error_message"></span>
                         </div>
