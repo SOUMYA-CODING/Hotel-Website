@@ -27,5 +27,5 @@ function queryBooking() {
     localStorage.setItem("check_in_data", check_in);
     localStorage.setItem("check_out_data", check_out);
     localStorage.setItem("adult_data", adult);
-    localStorage.setItem("children_data", children); 
+    localStorage.setItem("children_data", children);
 }
