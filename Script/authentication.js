@@ -5,8 +5,9 @@ function loginvalidationFun() {
     const password = document.getElementById("password").value;
 
     //Call the functions
-    emailValidation(email);
-    passwordValidation(password);
+    if(!emailValidation(email) | !passwordValidation(password)){
+        return false;
+    }
 }
 
 //For Registration page validation
@@ -17,9 +18,9 @@ function registrationvalidationFun() {
     const confirm_password = document.getElementById("confirm_password").value;
 
     //Call the functions
-    emailValidation(email);
-    passwordValidation(password);
-    confirmpasswordValidation(password, confirm_password);
+    if(!emailValidation(email) | !passwordValidation(password) | !confirmpasswordValidation(password, confirm_password)){
+        return false;
+    }
 }
 
 //Email
