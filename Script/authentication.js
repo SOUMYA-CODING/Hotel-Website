@@ -9,7 +9,6 @@ function loginvalidationFun() {
     passwordValidation(password);
 }
 
-
 //For Registration page validation
 function registrationvalidationFun() {
     //Get the data
