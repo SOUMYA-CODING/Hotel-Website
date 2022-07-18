@@ -4,11 +4,15 @@ let check_out_data = localStorage.getItem("check_out_data");
 let adult_data = localStorage.getItem("adult_data");
 let children_data = localStorage.getItem("children_data");
 
+//Remove the data from local storage
+window.localStorage.clear();
+
 //set the date to Labels
 document.getElementById("Check_in").value = check_in_data;
 document.getElementById("Check_out").value = check_out_data;
 document.getElementById("Adults").value = adult_data;
 document.getElementById("Childrens").value = children_data;
+
 
 //Get all booking details from user
 function bookingFun() {
