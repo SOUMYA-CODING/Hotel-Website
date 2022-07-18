@@ -26,9 +26,11 @@ function bookingFun() {
     const data_address = document.getElementById("address").value;
     const data_room_type = document.getElementById("room_type").value;
     const data_number_of_rooms = document.getElementById("number_of_rooms").value;
+    const data_ac = document.getElementById("ac");
+    const data_nonac = document.getElementById("nonac");
 
     //Validation of all data received
-    if (!check_in_fun(data_check_in) | !check_out_fun(data_Check_out) | !adults_fun(data_Adults) | !children_fun(data_Childrens) | !name_fun(data_Name) | !phone_number_fun(phone_number) | !email_fun(data_email) | !address_fun(data_address) | !room_type_fun(data_room_type) | !numbs_of_room_fun(data_number_of_rooms)) {
+    if (!check_in_fun(data_check_in) | !check_out_fun(data_Check_out) | !adults_fun(data_Adults) | !children_fun(data_Childrens) | !name_fun(data_Name) | !phone_number_fun(phone_number) | !email_fun(data_email) | !address_fun(data_address) | !room_type_fun(data_room_type) | !numbs_of_room_fun(data_number_of_rooms) | !conditioner_type_fun(data_ac, data_nonac)) {
         return false;
     }
 }
@@ -146,6 +148,16 @@ function numbs_of_room_fun(data_number_of_rooms) {
         return false;
     } else {
         document.getElementById("number_of_rooms_error").innerHTML = "";
+        return true;
+    }
+}
+
+function conditioner_type_fun(data_ac, data_nonac){
+    if(!data_ac.checked && !data_nonac.checked){
+        document.getElementById("conditioner_error").innerHTML = "Please check any one";
+        return false;
+    }else{
+        document.getElementById("conditioner_error").innerHTML = "";
         return true;
     }
 }

@@ -16,14 +16,15 @@ function registrationvalidationFun() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const confirm_password = document.getElementById("confirm_password").value;
+    const terms_cond = document.getElementById("terms_cond");
 
     //Call the functions
-    if (!emailValidation(email) | !passwordValidation(password) | !confirmpasswordValidation(password, confirm_password)) {
+    if (!emailValidation(email) | !passwordValidation(password) | !confirmpasswordValidation(password, confirm_password) | !terms_cond_Validation(terms_cond)) {
         return false;
     }
 }
 
-//Email
+//Validation of Email
 function emailValidation(email) {
     let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (email === "") {
@@ -38,6 +39,7 @@ function emailValidation(email) {
     }
 }
 
+//Validation of Password
 function passwordValidation(password) {
     if (password === "") {
         document.getElementById("password_error").innerHTML = "Password can't be empty ";
@@ -63,6 +65,7 @@ function passwordValidation(password) {
     }
 }
 
+//Validation of Confirm Password
 function confirmpasswordValidation(password, confirm_password) {
     //Validation for password
     if (confirm_password != password) {
@@ -70,6 +73,16 @@ function confirmpasswordValidation(password, confirm_password) {
         return false;
     } else {
         document.getElementById("confirm_password_error").innerHTML = "";
+        return true;
+    }
+}
+
+function terms_cond_Validation(terms_cond){
+    if(!terms_cond.checked){
+        document.getElementById("reg_terms_error").innerHTML = "Please check this field";
+        return false;
+    }else{
+        document.getElementById("reg_terms_error").innerHTML = "";
         return true;
     }
 }
