@@ -152,11 +152,11 @@ function numbs_of_room_fun(data_number_of_rooms) {
     }
 }
 
-function conditioner_type_fun(data_ac, data_nonac){
-    if(!data_ac.checked && !data_nonac.checked){
+function conditioner_type_fun(data_ac, data_nonac) {
+    if (!data_ac.checked && !data_nonac.checked) {
         document.getElementById("conditioner_error").innerHTML = "Please check any one";
         return false;
-    }else{
+    } else {
         document.getElementById("conditioner_error").innerHTML = "";
         return true;
     }

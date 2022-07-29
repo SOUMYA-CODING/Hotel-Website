@@ -31,120 +31,136 @@
         <img src="../Assets/Website Logo.png" alt="" class="mt-5">
         <h2 class="mt-3">Continue to Book Room.</h2>
         <form class="mt-3" autocomplete="off">
-            <div class="booking-details">
-                <h5 class="my-2">Your Booking Details</h5>
-                <div class="row mb-4">
-                    <di class="col">
-                        <div class="mb-3">
-                            <label for="Check_in" class="form-label">Check-in</label>
-                            <input type="date" class="form-control" id="Check_in" value="">
-                            <span id="Check_in_error" class="error_message"></span>
-                        </div>
-                    </di>
-                    <di class="col">
-                        <div class="mb-3">
-                            <label for="Check_out" class="form-label">Check-out</label>
-                            <input type="date" class="form-control" id="Check_out" value="">
-                            <span id="Check_out_error" class="error_message"></span>
-                        </div>
-                    </di>
-                    <di class="col">
-                        <div class="mb-3">
-                            <label for="Adults" class="form-label">Adults</label>
-                            <input type="number" class="form-control" id="Adults" value="">
-                            <span id="Adults_error" class="error_message"></span>
-                        </div>
-                    </di>
-                    <di class="col">
-                        <div class="mb-3">
-                            <label for="Childrens" class="form-label">Childrens</label>
-                            <input type="number" class="form-control" id="Childrens" value="">
-                            <span id="Childrens_error" class="error_message"></span>
-                        </div>
-                    </di>
-                </div>
-
-                <h5 class="my-2">Your Personal Details</h5>
-                <div class="row mb-4">
-                    <di class="col">
-                        <div class="mb-3">
-                            <label for="Name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="Name">
-                            <span id="Name_error" class="error_message"></span>
-                        </div>
-                    </di>
-                    <di class="col">
-                        <div class="mb-3">
-                            <label for="phone_number" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone_number">
-                            <span id="phone_number_error" class="error_message"></span>
-                        </div>
-                    </di>
-                    <di class="col">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email">
-                            <span id="email_error" class="error_message"></span>
-                        </div>
-                    </di>
-                    <di class="col">
-                        <div class="mb-3">
-                            <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address">
-                            <span id="address_error" class="error_message"></span>
-                        </div>
-                    </di>
-                </div>
-
-                <h5 class="my-2">Your Room</h5>
-                <div class="row mb-4">
-                    <di class="col-3">
-                        <div class="mb-3">
-                            <label for="room_type" class="form-label">Room Type</label>
-                            <select name="" id="room_type" class="form-select">
-                                <option value="">Select Room Type</option>
-                                <option value="Single Bedroom">Single Bedroom</option>
-                                <option value="Luxary Bedroom">Luxary Bedroom</option>
-                                <option value="Traditional Bedroom">Traditional Bedroom</option>
-                            </select>
-                            <span id="room_type_error" class="error_message"></span>
-                        </div>
-                    </di>
-                    <di class="col-3">
-                        <div class="mb-3">
-                            <label for="number_of_rooms" class="form-label">Number of Rooms</label>
-                            <input type="number" class="form-control" id="number_of_rooms">
-                            <span id="number_of_rooms_error" class="error_message"></span>
-                        </div>
-                    </di>
-                    <di class="col">
-                        <div class="mb-3">
-                            <label for="number_of_rooms" class="form-label">AC / NON-AC</label>
-                            <div class="radio-div">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="conditioner_type"
-                                        id="ac" value="AC">
-                                    <label class="form-check-label" for="ac">
-                                        AC
-                                    </label>
+            <div class="row">
+                <div class="col-8">
+                    <div class="booking-details">
+                        <h5 class="my-2">Your Booking Details</h5>
+                        <div class="row mb-4">
+                            <di class="col">
+                                <div class="mb-3">
+                                    <label for="Check_in" class="form-label">Check-in</label>
+                                    <input type="date" class="form-control" id="Check_in" value="">
+                                    <span id="Check_in_error" class="error_message"></span>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="conditioner_type"
-                                        id="nonac" value="NON-AC">
-                                    <label class="form-check-label" for="nonac">
-                                        NON-AC
-                                    </label>
+                            </di>
+                            <di class="col">
+                                <div class="mb-3">
+                                    <label for="Check_out" class="form-label">Check-out</label>
+                                    <input type="date" class="form-control" id="Check_out" value="">
+                                    <span id="Check_out_error" class="error_message"></span>
                                 </div>
+                            </di>
+                            <di class="col">
+                                <div class="mb-3">
+                                    <label for="Adults" class="form-label">Adults</label>
+                                    <input type="number" class="form-control" id="Adults" value="">
+                                    <span id="Adults_error" class="error_message"></span>
+                                </div>
+                            </di>
+                            <di class="col">
+                                <div class="mb-3">
+                                    <label for="Childrens" class="form-label">Childrens</label>
+                                    <input type="number" class="form-control" id="Childrens" value="">
+                                    <span id="Childrens_error" class="error_message"></span>
+                                </div>
+                            </di>
+                        </div>
+
+                        <h5 class="my-2">Your Personal Details</h5>
+                        <div class="row mb-4">
+                            <di class="col">
+                                <div class="mb-3">
+                                    <label for="Name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="Name">
+                                    <span id="Name_error" class="error_message"></span>
+                                </div>
+                            </di>
+                            <di class="col">
+                                <div class="mb-3">
+                                    <label for="phone_number" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone_number">
+                                    <span id="phone_number_error" class="error_message"></span>
+                                </div>
+                            </di>
+                            <di class="col">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email">
+                                    <span id="email_error" class="error_message"></span>
+                                </div>
+                            </di>
+                            <di class="col">
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address">
+                                    <span id="address_error" class="error_message"></span>
+                                </div>
+                            </di>
+                        </div>
+
+                        <h5 class="my-2">Your Room</h5>
+                        <div class="row mb-4">
+                            <di class="col-3">
+                                <div class="mb-3">
+                                    <label for="room_type" class="form-label">Room Type</label>
+                                    <select name="" id="room_type" class="form-select">
+                                        <option value="">Select Room Type</option>
+                                        <option value="Single Bedroom">Single Bedroom</option>
+                                        <option value="Luxary Bedroom">Luxary Bedroom</option>
+                                        <option value="Traditional Bedroom">Traditional Bedroom</option>
+                                    </select>
+                                    <span id="room_type_error" class="error_message"></span>
+                                </div>
+                            </di>
+                            <di class="col-3">
+                                <div class="mb-3">
+                                    <label for="number_of_rooms" class="form-label">Number of Rooms</label>
+                                    <input type="number" class="form-control" id="number_of_rooms">
+                                    <span id="number_of_rooms_error" class="error_message"></span>
+                                </div>
+                            </di>
+                            <di class="col">
+                                <div class="mb-3">
+                                    <label for="number_of_rooms" class="form-label">AC / NON-AC</label>
+                                    <div class="radio-div">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="conditioner_type" id="ac"
+                                                value="AC">
+                                            <label class="form-check-label" for="ac">
+                                                AC
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="conditioner_type"
+                                                id="nonac" value="NON-AC">
+                                            <label class="form-check-label" for="nonac">
+                                                NON-AC
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <span id="conditioner_error" class="error_message"></span>
+                                </div>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body total-cost-card">
+                            <h4 class="card-title">Total Cost</h4>
+                            <hr>
+                            <div class="mb-3">
+                                <label>Rooms : </label>
                             </div>
-                            <span id="conditioner_error" class="error_message"></span>
+                            <div class="mb-3">
+                                <label>Cost : </label>
+                            </div>
+                            <hr>
+                            <div class="col d-flex justify-content-end">
+                                <button class="btn" id="booking-btn" onclick="return bookingFun()">Next</button>
+                                <button class="btn" id="cancel-btn">Cancle</button>
+                            </div>
                         </div>
-                    </di>
-                </div>
-
-                <div class="row">
-                    <div class="col d-flex justify-content-end">
-                        <button class="btn" id="booking-btn" onclick="return bookingFun()">Next</button>
-                        <button class="btn" id="cancel-btn">Cancle</button>
                     </div>
                 </div>
             </div>
