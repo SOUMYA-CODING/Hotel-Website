@@ -30,7 +30,7 @@ function bookingFun() {
     const data_nonac = document.getElementById("nonac");
 
     //Validation of all data received
-    if (!check_in_fun(data_check_in) | !check_out_fun(data_Check_out) | !adults_fun(data_Adults) | !children_fun(data_Childrens) | !name_fun(data_Name) | !phone_number_fun(phone_number) | !email_fun(data_email) | !address_fun(data_address) | !room_type_fun(data_room_type) | !numbs_of_room_fun(data_number_of_rooms) | !conditioner_type_fun(data_ac, data_nonac)) {
+    if (!check_in_fun(data_check_in) | !check_out_fun(data_Check_out, data_check_in) | !adults_fun(data_Adults) | !children_fun(data_Childrens) | !name_fun(data_Name) | !phone_number_fun(phone_number) | !email_fun(data_email) | !address_fun(data_address) | !room_type_fun(data_room_type) | !numbs_of_room_fun(data_number_of_rooms) | !conditioner_type_fun(data_ac, data_nonac)) {
         return false;
     }
 }
@@ -47,9 +47,12 @@ function check_in_fun(data_check_in) {
 }
 
 //Check out
-function check_out_fun(data_Check_out) {
+function check_out_fun(data_Check_out, data_check_in) {
     if (data_Check_out === "") {
         document.getElementById("Check_out_error").innerHTML = "Field can't be empty";
+        return false;
+    } else if (Date.parse(data_Check_out) <= Date.parse(data_check_in)) {
+        document.getElementById("Check_out_error").innerHTML = "Invalid Check out date";
         return false;
     } else {
         document.getElementById("Check_out_error").innerHTML = "";
