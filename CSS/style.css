@@ -173,13 +173,9 @@ html {
     align-items: center;
 }
 
-.img-banner {
+.img-banner img{
     width: 520px;
     height: 350px;
-    background-image: url('../Assets/banner-1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #about-page .btn {

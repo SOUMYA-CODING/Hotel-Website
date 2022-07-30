@@ -1,0 +1,126 @@
+@media only screen and (max-width: 480px) {
+
+    /* Home Page */
+    .navbar-brand img {
+        width: 60px;
+    }
+
+    #home-page .banner {
+        margin-top: 6.5rem;
+    }
+
+    #home-page .banner-content {
+        height: auto;
+        padding: 3rem 2rem;
+    }
+
+    #home-page .banner-content h1 {
+        font-size: 25px;
+    }
+
+    #home-page .banner-content p {
+        width: 100%;
+    }
+
+    #home-page .booking-query-section {
+        position: relative;
+        margin-top: -3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home-page .booking-query-section form {
+        box-shadow: 0px 0px 8px 0px #000;
+        border-radius: 10px;
+        background: #fff;
+        padding: 1.7rem;
+    }
+
+    #home-page .booking-query-section form .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home-page .booking-query-section form .row .col {
+        margin-top: 12px;
+    }
+
+    #home-page .booking-query-section .btn {
+        width: 100%;
+    }
+
+    /* About Page */
+    #about-page {
+        height: auto;
+        padding: 7rem 1rem;
+    }
+
+    .img-banner img {
+        margin-top: 1.5rem;
+        width: 330px;
+        height: 250px;
+    }
+
+    /* Room Page */
+    #room-page {
+        height: auto;
+        padding: 7rem 2rem;
+    }
+
+    #room-page .card {
+        width: 310px;
+        margin-bottom: 15px;
+    }
+
+    /* Service Page */
+    #service-page {
+        height: auto;
+        padding: 7rem 2rem;
+    }
+
+    #service-page .service-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #service-page .servcie-banner {
+        width: 300px;
+        height: 350px;
+        margin-bottom: 15px;
+    }
+
+    #service-page .servcie-banner-card {
+        margin-bottom: 15px;
+    }
+
+    #service-page .servcie-banner-card:hover {
+        box-shadow: 0px 2px 70px #111;
+        transform: translateY(-5px);
+    }
+
+    #service-page .servcie-banner-card .img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    #service-page .servcie-banner-card h5 {
+        color: orangered;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    #service-page .servcie-banner-card p {
+        font-style: 14px;
+        letter-spacing: 1.5px;
+    }
+
+}
