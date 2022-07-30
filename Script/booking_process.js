@@ -13,7 +13,6 @@ document.getElementById("Check_out").value = check_out_data;
 document.getElementById("Adults").value = adult_data;
 document.getElementById("Childrens").value = children_data;
 
-
 //Get all booking details from user
 function bookingFun() {
     const data_check_in = document.getElementById("Check_in").value;
