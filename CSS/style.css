@@ -593,7 +593,6 @@ html {
 
 
 /* Booking Page */
-
 #booking-page {
     width: 100%;
     height: 100vh;
@@ -640,6 +639,7 @@ html {
 }
 
 .total-cost-card {
+    width: auto;
     box-shadow: 0px 0px 5px 0px #111;
 }
 

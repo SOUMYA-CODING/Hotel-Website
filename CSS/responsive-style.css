@@ -12,6 +12,10 @@
         color: orangered;
     }
 
+    #or {
+        display: none;
+    }
+
     /* Home Page */
     .navbar-brand img {
         width: 60px;
@@ -149,28 +153,17 @@
     }
 
     #login-page .row {
-        width: 100%;
-        margin: 1rem 0;
         height: auto;
-        box-shadow: 0px 0px 8px 0px #111;
-    }
-
-    #login-page .row .login-banner {
-        height: 350px;
-    }
-
-    #login-page .row .form {
-        padding: 1rem;
-    }
-
-    .login-section form {
         display: flex;
         flex-direction: column;
     }
 
-    .login-section p a {
-        text-decoration: none;
-        color: orange;
+    #login-page .row .login-banner {
+        display: none;
+    }
+
+    #login-page .row .form {
+        padding: 1rem;
     }
 
     .login-icon {
@@ -178,83 +171,47 @@
         flex-direction: column;
     }
 
+    .login-section form {
+        padding: 2rem;
+    }
+
+    .login-section p a {
+        text-decoration: none;
+        color: orange;
+    }
+
     .login-icon img {
         width: 24px;
     }
 
     .login-icon span {
-        border: 1px solid #111;
-        border-radius: 5px;
-        padding: 1rem;
-        justify-content: center;
-        margin: 2px;
-        font-size: 14px;
-        width: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .login-icon span:hover {
-        box-shadow: 0px 0px 8px 0px #111;
-    }
-
-    .form-check-label span {
-        color: orange;
-    }
-
-    .login-section .form-control:focus {
-        box-shadow: 0px 0px 8px 0px royalblue;
-    }
-
-    .login-section .form-control:hover {
-        box-shadow: 0px 0px 8px 0px royalblue;
-    }
-
-    .btn-submit .btn {
-        width: 100%;
-        background-color: orangered;
-        color: #fff;
-    }
-
-    .btn-submit .btn:focus {
-        box-shadow: none;
-    }
-
-    .btn-submit .btn:hover {
-        box-shadow: 0px 0px 8px 0px orangered;
-        color: #fff;
+        width: auto;
     }
 
     /* Registration Page */
     #registration-page {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: auto;
     }
 
     #registration-page .row {
-        width: 100%;
-        margin: 1rem 0;
-        height: 650px;
-        box-shadow: 0px 0px 8px 0px #111;
+        height: auto;
     }
 
     #registration-page .row .registration-banner {
-        height: 650px;
-        background-image: url('../Assets/img\ \(3\).jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        display: none;
     }
 
     #registration-page .row .form {
+        padding: 1rem;
+    }
+
+    .registration-icon {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+    }
+
+    .registration-section form {
+        padding: 2rem;
     }
 
     .registration-section p a {
@@ -267,29 +224,44 @@
     }
 
     .registration-icon span {
-        border: 1px solid #111;
-        border-radius: 5px;
-        padding: 1rem;
-        justify-content: center;
-        margin: 2px;
-        font-size: 14px;
-        width: 250px;
+        width: auto;
+    }
+
+    /* Booking Page */
+    #booking-page {
+        height: auto;
+    }
+
+    #booking-page img {
+        width: 100px;
+    }
+
+    .booking-details .details{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
+        flex-direction: column;
     }
 
-    .registration-icon span:hover {
-        box-shadow: 0px 0px 8px 0px #111;
+    .booking-details .details .form-control,
+    .booking-details .details .form-check {
+        width: 100%;
     }
 
-    .registration-section .form-control:focus {
-        box-shadow: 0px 0px 8px 0px royalblue;
+    #booking-btn {
+        width: auto;
     }
 
-    .registration-section .form-control:hover {
-        box-shadow: 0px 0px 8px 0px royalblue;
+    #cancel-btn {
+        width: auto;
+    }
+
+
+
+    /* Confirm Booking */
+    #confirm-booking {
+        width: 100%;
+        height: 100vh;
+        background-color: royalblue;
+        display: none;
     }
 
 }
