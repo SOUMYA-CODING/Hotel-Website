@@ -1,5 +1,17 @@
 @media only screen and (max-width: 480px) {
 
+    /* Common */
+    #header-text {
+        font-size: 25px;
+        font-weight: bolder;
+        letter-spacing: 1.5px;
+    }
+
+    #header-title {
+        font-size: 16px;
+        color: orangered;
+    }
+
     /* Home Page */
     .navbar-brand img {
         width: 60px;
@@ -10,8 +22,9 @@
     }
 
     #home-page .banner-content {
-        height: auto;
-        padding: 3rem 2rem;
+        width: 100%;
+        height: 350px;
+        padding: 0 2rem;
     }
 
     #home-page .banner-content h1 {
@@ -23,18 +36,11 @@
     }
 
     #home-page .booking-query-section {
-        position: relative;
-        margin-top: -3rem;
+
+        margin-top: -2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    #home-page .booking-query-section form {
-        box-shadow: 0px 0px 8px 0px #000;
-        border-radius: 10px;
-        background: #fff;
-        padding: 1.7rem;
     }
 
     #home-page .booking-query-section form .row {
@@ -43,7 +49,7 @@
     }
 
     #home-page .booking-query-section form .row .col {
-        margin-top: 12px;
+        margin-top: 5px;
     }
 
     #home-page .booking-query-section .btn {
@@ -62,6 +68,10 @@
         height: 250px;
     }
 
+    #about-page p {
+        font-size: 14px;
+    }
+
     /* Room Page */
     #room-page {
         height: auto;
@@ -70,7 +80,12 @@
 
     #room-page .card {
         width: 310px;
+        height: 250px;
         margin-bottom: 15px;
+    }
+
+    #room-page .card img {
+        height: 100%;
     }
 
     /* Service Page */
@@ -80,9 +95,6 @@
     }
 
     #service-page .service-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
     }
 
@@ -96,31 +108,39 @@
         margin-bottom: 15px;
     }
 
-    #service-page .servcie-banner-card:hover {
-        box-shadow: 0px 2px 70px #111;
-        transform: translateY(-5px);
+    /* Testimonial Page */
+    #testimonial-page {
+        height: auto;
+        padding: 7rem 2rem;
     }
 
-    #service-page .servcie-banner-card .img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        background-color: #fff;
+    /* Footer */
+    .footer-contact .row {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
+        flex-direction: column;
     }
 
-    #service-page .servcie-banner-card h5 {
-        color: orangered;
-        font-size: 24px;
-        letter-spacing: 2px;
+    .footer-contact .single-section {
+        margin-bottom: 5px;
     }
 
-    #service-page .servcie-banner-card p {
-        font-style: 14px;
-        letter-spacing: 1.5px;
+    .footer-content {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 2rem;
+    }
+
+    .footer-content .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo img {
+        width: 150px;
+    }
+
+    .footer-social-icon {
+        margin-bottom: 2rem;
     }
 
 }
